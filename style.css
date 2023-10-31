@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+* {
+    background-color: black;
+    font-family: 'JetBrains Mono', monospace;
+}
+.prompt {
+    color: white;
+}
+
+input {
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;
+    margin: 0%;
+    padding: 0 !important;
+    font-size: 16px; 
+}
+
+#output {
+    color: white;
+}
