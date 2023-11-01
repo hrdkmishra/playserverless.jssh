@@ -13,3 +13,5 @@ jssh is a ***serverless, web-based playground*** that simulates a Linux-like com
 5. [ ] cp - Copy files or directories
 6. [ ] mv - Move or rename files and directories 
 7. [ ] rm - Remove files or directories 
+8. [ ] cat - Concatenate files and print on the standard output
+9. [x] clear - Clear terminal screen
