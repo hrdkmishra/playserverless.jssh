@@ -194,7 +194,7 @@ const executeCommand = (command) => {
     case "date":
       return new Date().toString();
     case "clear":
-      return clear_cmd();
+      return clear();
     case "pwd":
       return pwd(currentDirectory);
     case "":
