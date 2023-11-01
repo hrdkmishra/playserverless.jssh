@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
+    <script defer src="main.js"></script>
     <title>jssh</title>
 </head>
-<body>
-    <div id="terminal">
+<body onclick="focusInput()">
+    <div id="terminal" class="terminal" >
         <div id="output"></div>
         <div class="input-line">
-            <span class="prompt">[superman@jssh:~]$</span>
+            <span class="prompt">[superman@jssh]$</span>
             <input type="text" id="userInput" autofocus onkeyup="handleInput(event)">
         </div>
     </div>
