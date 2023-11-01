@@ -64,29 +64,36 @@ const directoryNames = [
   "var",
 ];
 addDirectories(root, directoryNames);
-
-const home = new Directory("home");
 const superman = new Directory("superman");
-
-root.addDirectory("home");
 root.contents.get("home").addDirectory("superman");
 
 const fileSystem = root;
 let currentDirectory = fileSystem;
 
 const mkdir = (name) => {
-  currentDirectory.addDirectory(name);
-  return "";
+  if (currentDirectory.contents.has(name)) {
+    return `mkdir: cannot create directory '${name}': File exists`;
+  }
+  else{
+    currentDirectory.addDirectory(name);
+    return "";
+  } 
+
 };
 
-const clear_cmd = () => {
+const clear = () => {
   document.getElementById("output").innerHTML = "";
   return "";
 };
 
 const touch = (name) => {
-  currentDirectory.addFile(name);
-  return "";
+  if (currentDirectory.contents.has(name)) {
+    return `touch: cannot create file '${name}': File exists`;
+  }
+  else {
+    currentDirectory.addFile(name);
+    return "";
+  }
 };
 
 const cd = (currentDir, targetDir) => {
