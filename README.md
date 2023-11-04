@@ -4,7 +4,7 @@
 </h1>
 
 <p align="center">
-    <img src="images/jssh.svg" width="300px" height="400px">
+    <img src="logo/jssh.svg" width="300px" height="400px">
 </p>
 
 jssh is a ***serverless, web-based playground*** that simulates a Linux-like command line interface. It allows users to interact with a virtual file system using common Linux commands. This project is designed to provide a fun and educational way to learn and practice Linux command-line operations.
